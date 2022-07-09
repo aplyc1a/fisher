@@ -7,7 +7,7 @@ Fisher is a dispatcher、honeypot and http-request logger.
 ## 参数
 
 ```
-python3 fisher.py -p [port] {-s} {-z 0/1}
+python3 fisher.py -p [port] {-s} {-Z 0/1}
 
 		-h / --help : show help message
 		-p / --port : set server port to listen on
@@ -35,7 +35,7 @@ openssl req -new -x509 -keyout server.pem -out server.pem -days 365 -nodes
 python3 fisher.py -p 56221 -s
 ```
 
-![2022-07-09_135007](.\2022-07-09_135007.png)
+![2022-07-09_135007](https://github.com/aplyc1a/fisher/blob/master/2022-07-09_135007.png)
 
 **step4**：如上图所示，客户端可以使用如下方法隐蔽的下载程序，可用于辅助实施无文件攻击。
 
@@ -77,4 +77,4 @@ python3 fisher.py -p 56221 -s -Z 1
 
 **step3:**标红的\[H]记录表示蜜罐相关事件，相关细节也完整的存储在log目录下，甚至包含POST数据。
 
-![2022-07-09_134711](.\2022-07-09_134711.png)
+![2022-07-09_134711](https://github.com/aplyc1a/fisher/blob/master/2022-07-09_134711.png)
